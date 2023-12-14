@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế web lab6</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="">Home</a></li>
+                <li class="nav__item"><a href="">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="">SẢN PHẨM </a></li>
+                <li class="nav__item"><a href="">THÔNG TIN</a></li>
+                <li class="nav__item">
+                    <a href="">
+                        THÊM
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu__item">Đổi trả và bảo hành</li>
+                        <li class="sub-menu__item">Chương trình khuyến mại</li>
+                        <li class="sub-menu__item">Tư vấn cho khách hàng</li>
+
+                    </ul>
+                </li>
+            </ul>
+            <a href="" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+        </div>
+        
+        <!-- Banner -->
+        <div class="mySlides">
+            <img src="./img/anh giang sinh.jpg" style="width:100%">
+            <div class="caption">
+                <p>SO HAPP !</p>
+                <b><p style="font-size: 14px;">Noel ấm ám bên gia đình và bạn bè.</p</b>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="./img/anh giang sinh.jpg" style="width:100%">
+            <div class="caption">
+                <p>Merry Christmas!</p>
+                <b><p style="font-size: 14px;">Chúc bạn Giáng Sinh an lành! Luôn vui vẻ và hạnh phúc nhé!</p</b>
+            </div>
+        </div>
+        
+        
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+          </script>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <div class="band">
+            <div id="content-section">
+                <h2 class="section-heading">Christmas</h2>
+                <p class="section-sub-hesding">Happy Noel</p>
+                <p class="about-text">
+                    Lại một mùa Giáng sinh nữa đang gần kề, bên cạnh việc trang hoàng nhà cửa thì đây còn là dịp để mọi người trao nhau những món quà ý nghĩa. Không chỉ đơn thuần là quà tặng, họ còn trao nhau lời chúc và những tình cảm tốt đẹp nhất. Dẫu món quà Noel bạn chọn là gì thì cũng hãy biến nó trở nên thật đặc biệt bằng cách trao gửi thật ấn tượng nhé. Đảm bảo món quà ấy sẽ vô cùng gây bất ngờ và làm ấm lòng bất kỳ ai trong đêm đông giá lạnh. Hãy để tôi giúp bạn tìm những món quà cực hay mà bạn có thể tặng người thân, bạn bè và người yêu nhé.
+                </p>
+            </div>
+            <div class="three_avatar">
+                <div class="one">
+<p><strong>Name</strong></p>
+                    <img src="./img/anh giang sinh 2.jpg" alt="">
+                </div>
+                <div class="two">
+                    <p><strong>Name</strong></p>
+                    <img src="./img/anh giang sinh3.jpg" alt="">
+                </div>
+                <div class="three">
+                    <p><strong>Name</strong></p>
+                    <img src="./img/qua giang sinh 4.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="tour">
+            <div class="tour-container">
+            <h2 class="tour-title">Những Sản Phẩm</h2>
+            <p class="tour-content">
+                <i>Remember to book your tickets</i>
+            </p>
+            <br>
+            <ul class="w3-ul">
+                <li>
+                    Tên Sản Phẩm 
+                    <span class="sold-out">Sold out</span>
+                </li>
+                <li>
+                    Số lượng 
+                    <span class="sold-out">Sold out</span>
+                </li>
+                <li>
+                    Màu sắc
+                    <span class="span-3">3</span>
+                </li>
+            </ul>
+            <div class="tour-buy" style="margin: 0 -16px;">
+                <div class="buy-1">
+                    <img src="./img/anh giang sinh 2.jpg" style="width: 100%;" alt="">
+                    <div class="content-buy">
+                        <p><b>Gấu Bông</b></p>
+                        <p class="" style="color: #9e9d9d;">Có 3 màu</p>
+                        <p>Những chú gấu bông dễ thương giúp mùa Noel trở nên ấm áp hơn.</p>
+                        <button class="button-buy">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="buy-2">
+                    <img src="./img/anh giang sinh3.jpg" style="width: 100%;"  alt="">
+                    <div class="content-buy">
+                        <p><b>Móc Chìa Khóa</b></p>
+                        <p class="" style="color: #9e9d9d;">Đa dạng hình</p>
+                        <p>Móc chìa khóa được thiết kế dành riêng cho mùa Giáng sinh.</p>
+                        <button class="button-buy">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="buy-3">
+                    <img src="./img/qua giang sinh 4.jpg" style="width: 100%;"  alt="">
+                    <div class="content-buy">
+                        <p><b>Mũ Len</b></p>
+                        <p class="" style="color: #9e9d9d;">Họa tiết bắt mắt</p>
+                        <p>Quà Giáng sinh cho bé gái có thể là những chiếc mũ len họa tiết đáng yêu.</p>
+                        <button class="button-buy">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="contact" style="max-width: 800px;">
+                <h2 class="title-contact">THÔNG TIN LIÊN HỆ</h2>
+                <p class="fan-contact"><i>Bạn có bất kì thắc mắc gì vui lòng liên hệ.</i></p>
+<div class="content-contact">
+                  <div class="inf-contact">
+                    <i class="fa fa-map-marker" style="font-size: 18px!important; width:30px"></i>Hà Nội , Việt Nam <br>
+                    <i class="fa fa-phone" style="font-size: 18px!important;width:30px"></i> Phone: 0327016376<br>
+                    <i class="fa fa-envelope" style="font-size: 18px!important;width:30px"> </i> Email: yen36705@mail.com<br>
+                  </div>
+                  <div class="inf-user">
+                      <div class="name-mail" style="margin:0 -16px 8px -16px">
+                        <div class="input-name">
+                          <input class="input" type="text" placeholder="Name" required="" name="Name">
+                        </div>
+                        <div class="input-mail">
+                          <input class="input" type="text" placeholder="Email" required="" name="Email">
+                        </div>
+                      </div>
+                      <input class="input-mess" type="text" placeholder="Lời nhắn" required="" name="Lời nhắn">
+                      <button class="btn-contact" type="submit">SEND</button>          
+                  </div>
+                </div>
+              </div>
+              <img src="./img/anh gs4.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+        </div>
+    </div>
+        <footer class="" style="margin-top: 16px; text-align: center;">
+            <i class="fab fa-facebook" style="color: #000;opacity: 0.60;font-size: 24px;" aria-hidden="true"></i>
+            <i class="fab fa-instagram"style="color: #000;opacity: 0.60;font-size: 24px;"></i>
+            <i class="fab fa-snapchat" style="color: #000;opacity: 0.60;font-size: 24px;"></i>
+            <i class="fab fa-pinterest-p " style="color: #000;opacity: 0.60;font-size: 24px;"></i>
+            <i class="fab fa-twitter" style="color: #000;opacity: 0.60;font-size: 24px;"></i>
+            <i class="fab fa-linkedin" style="color: #000;opacity: 0.60;font-size: 24px;"></i>
+            <p class="" style="opacity: 0.60;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+          </footer>
+    
+    
+</body>
+
+</html>
+
